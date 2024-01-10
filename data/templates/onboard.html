@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    </head>
+    <body>
+        <div>
+            <p>
+                Dear {{vendor_name}},
+            </p>
+            <p>
+                {{company_name}} has requested that you onboard yourself into their accounting system in order to receive payment.
+            </p>
+            <p>
+                You may fill out your company information by clicking on the blue button below. Doing so gives {{company_name}} confirmation of your w9 information, which is required by the IRS and bank information to allow them to process payment to you.
+            </p>
+            <p style="text-align: center">
+                <a href="https://app.zyllion.co/vendor/onboard/{{token}}" style="padding: 10px 16px; font-size: 18px; line-height: 1.33; border-radius: 6px 6px 6px 6px; color: rgb(255, 255, 255); background-color: rgb(66, 139, 202); border-color: rgb(53, 126, 189); display: inline-block; margin-bottom: 0px; font-weight: normal; text-align: center; white-space: nowrap; vertical-align: middle; cursor: pointer; border: 1px solid transparent; text-decoration: none" target="_blank">Onboard Here</a>
+            </p>
+            <p>
+                Or, copy and paste this link into your browser:
+            </p>
+            <a href="https://app.zyllion.co/vendor/onboard/{{token}}" target="_blank">https://app.zyllion.co/vendor/onboard/{{token}}</a>
+            <p></p>
+            <hr />
+            <p>
+                By clicking on the secure link, you give permission to {{company_name}} and Zyllion LLC to deliver your w-9 and bank information electronically.
+            </p>
+            <p>
+                Our w-9 form may look a little different from the usual w-9; however, it is an acceptable substitute per IRS rules and regulations.
+            </p>
+            <hr />
+            <p>
+                This link will be valid for 10 days after the date of this email at which time it will become inaccessible. You may then email <a href="{{email}}" target="_blank">{{email}}</a> and request that they send a new link.
+            </p>
+            <p>
+                You may update your information by emailing <a href="mailto:{{email}}" target="_blank">{{email}}</a>. Please include the company name, your name, and phone number.
+            </p>
+            <p>
+                Sincerely, <br /> The Zyllion Team <br /> www.zyllion.co
+            </p>
+        </div>
+    </body>
+</html>
